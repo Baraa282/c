@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="circle_nav ">
+        <a href="#" class="hamburger"><i class="fa fa-play"></i></a>
+        <ul class="menu">
+          <li data-submenu="home"><a href="#"><i class="fa fa-home"></i></a></li>
+          <li><a href="#"><i class="fa fa-database"></i></a></li>
+          <li><a href="#"><i class="fa fa-desktop"></i></a></li>
+          <li><a href="#"><i class="fa fa-cubes"></i></a></li>
+          <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+      </nav>
+      
+      <!-- Main Content Area -->
+      <main class="main-content" id="mainContent">
+        <div class="quran-container">
+          <div class="surah-info" id="surahInfo">
+            <h1 class="surah-title">القرآن الكريم</h1>
+            <p class="surah-subtitle">The Holy Quran</p>
+          </div>
+          <div class="quran-text" id="quranText">
+            <p class="welcome-text">Welcome to the Quran App. Select a Surah from the menu to begin reading.</p>
+          </div>
+          <div class="controls" id="controls">
+            <button class="play-btn" id="playBtn">
+              <i class="fa fa-play"></i>
+            </button>
+            <button class="pause-btn" id="pauseBtn" style="display: none;">
+              <i class="fa fa-pause"></i>
+            </button>
+          </div>
+        </div>
+      </main>
+
+      <!-- Hamburger Menu -->
+      <div class="hamburger-menu" id="hamburgerMenu">
+        <div class="hamburger-header">
+          <h3>Menu</h3>
+          <button class="close-menu" id="closeMenu">
+            <i class="fa fa-times"></i>
+          </button>
+        </div>
+        <ul class="hamburger-menu-items">
+          <li><a href="#" id="selectSurah"><i class="fa fa-list"></i> Select Surah</a></li>
+          <li><a href="#" id="selectAyah"><i class="fa fa-quote-left"></i> Select Ayah</a></li>
+          <li><a href="#" id="selectReciter"><i class="fa fa-microphone"></i> Select Reciter</a></li>
+          <li><a href="#" id="selectTransliteration"><i class="fa fa-language"></i> Select Transliteration</a></li>
+          <li><a href="#" id="darkMode"><i class="fa fa-moon-o"></i> Dark Mode</a></li>
+          <li><a href="#" id="fontSize"><i class="fa fa-font"></i> Font Size</a></li>
+          <li><a href="#" id="arabicFont"><i class="fa fa-text-height"></i> Arabic Font</a></li>
+          <li><a href="#" id="about"><i class="fa fa-info-circle"></i> About</a></li>
+        </ul>
+      </div>
+
+      <footer class="">
+          <!-- <i class="fa fa-navicon" aria-hidden="true"></i> -->
+          <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+          <a href="#" id="hamburgerBtn"><i class="fa fa-bars" aria-hidden="true"></i></a>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
